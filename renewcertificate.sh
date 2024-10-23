@@ -24,7 +24,7 @@ ABS_ROOT=$(readlink -f $PKI_DIR/$CA_CERT_FILE)  # read CA file path
 echo "ABS_KEY: $ABS_KEY"
 
 # build SCEPman URL
-APPSERVICE_URL="https://$(cat $PKI_DIR/scepmanurlroot).azurewebsites.net"                             # SCEPman instance root URL
+APPSERVICE_URL="https://app-scepman-kuvpncndxfzvo.azurewebsites.net"                             # SCEPman instance root URL
 
 TEMP=$(mktemp -d tmpXXXXXXX)
 TEMP_CSR="$TEMP/tmp.csr"
